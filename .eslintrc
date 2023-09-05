@@ -4,6 +4,11 @@
     "es6": true
   },
   "root": true,
+  "settings": {
+    "import/resolver": {
+      "typescript": { "project": "./" }
+    }
+  },
   "extends": [
     "eslint:recommended",
     "airbnb",
@@ -25,6 +30,7 @@
       },
       "rules": {
         "arrow-body-style": ["error", "always"],
+        "import/prefer-default-export": "off",
         "import/no-extraneous-dependencies": "off",
         "react/react-in-jsx-scope": "off",
         "react/no-unknown-property": "off",
@@ -99,6 +105,7 @@
     }
   ],
   "rules": {
+    "import/prefer-default-export": "off",
     "arrow-body-style": ["error", "always"],
     "import/no-extraneous-dependencies": "off",
     "react/react-in-jsx-scope": "off",
