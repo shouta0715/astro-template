@@ -1,4 +1,9 @@
-import { defineConfig } from 'astro/config';
+/* eslint-disable import/no-unresolved */
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
-export default defineConfig({});
+import react from "@astrojs/react";
+
+export default defineConfig({
+  integrations: [tailwind(), react()],
+});
