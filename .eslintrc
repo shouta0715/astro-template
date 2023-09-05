@@ -6,7 +6,7 @@
   "root": true,
   "settings": {
     "import/resolver": {
-      "typescript": { "project": "./" }
+      "typescript": { "project": "./src" }
     }
   },
   "extends": [
